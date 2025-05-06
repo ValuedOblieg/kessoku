@@ -3,13 +3,93 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
     <title>ぼっち・ざ・ろっく！
     </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <style>
+      html {
+    scroll-behavior: smooth;
+}
+
+.header{
+    margin-top:60px;
+}
+
+#services img{
+    height: 290px;
+}
+
+.btn:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+  }
+
+  .card-img-top {
+    transition: filter 0.3s ease;
+  }
+  
+  .card-img-top:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+  }
+  
+
+  .card:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+  }
+
+  .btn:hover {
+    transform: scale(1.05);
+    animation: pulse 0.4s ease-in-out;
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.08); }
+    100% { transform: scale(1); }
+  }
+  
+  @keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+  }
+  
+  .floating {
+    animation: float 2s ease-in-out infinite;
+  }
+
+  .typing {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid black;
+    width: 0;
+    animation: typing 3s steps(30, end) forwards, blink 0.7s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  @keyframes blink {
+    50% { border-color: transparent }
+  }
+
+  .bi {
+    transition: transform 0.3s ease;
+  }
+  .bi:hover {
+    transform: scale(1.2);
+  }
+  
+    </style>
 
   </head>
   <body>
