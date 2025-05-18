@@ -89,4 +89,8 @@ html, body {
       padding: 1.5rem 1rem;
     }
   }
+
+    html, body {
+  overflow-x: hidden;
+}
   
